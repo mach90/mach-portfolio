@@ -1,8 +1,7 @@
 import { Cpu } from "lucide-react";
 
-export default function Project({title, description, status, tech, src, src2, link}) {
+export default function Project({title, description, status, tech, src, link}) {
     
-
     return (
         <div className="sticky top-28 mb-96 shadow-md">
 
@@ -16,7 +15,7 @@ export default function Project({title, description, status, tech, src, src2, li
                 </div>
 
                 <div className="h-full object-cover object-top ">
-                    <button><img src={`../img/${src}`} alt={title} className="rounded-xl shadow-md cursor-crosshair"/></button>
+                    <a href={link} target="_blank"><img src={src} alt={title} className="rounded-xl shadow-md cursor-crosshair"/></a>
                 </div>
 
             </div>

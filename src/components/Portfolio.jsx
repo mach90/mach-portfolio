@@ -59,7 +59,7 @@ export default function Portfolio() {
 
         gsap.fromTo("#together1", {opacity: 0}, {opacity: 1, duration: 3, scrollTrigger: {trigger: '#together1', toggleActions: "play none none none", start: "top 50%", end: "bottom 40%", markers : false,}});
         gsap.fromTo("#together2", {opacity: 0}, {opacity: 1, duration: 3, delay: 1.2, scrollTrigger: {trigger: '#together1', toggleActions: "play none none none", start: "top 50%", end: "bottom 40%", markers : false,}});
-        gsap.fromTo("#together3", {opacity: 0}, {opacity: 1, duration: 3, delay: 2.4, scrollTrigger: {trigger: '#together1', toggleActions: "play none none none", start: "top 50%", end: "bottom 40%", markers : false,}});
+        // gsap.fromTo("#together3", {opacity: 0}, {opacity: 1, duration: 3, delay: 2.4, scrollTrigger: {trigger: '#together1', toggleActions: "play none none none", start: "top 50%", end: "bottom 40%", markers : false,}});
     }, []);
 
     return (
@@ -82,7 +82,7 @@ export default function Portfolio() {
             <div id='together' className={cardStyle4}>
                 <h1 id='together1' className={card4TitleStyle}>Contact me</h1>
                 <h2 id='together2' className={card4SubtitleStyle}>Together we can do great things</h2>
-                <h2 id='together3' className={card4SubtitleStyle}>machin at gmail</h2>
+                {/* <h2 id='together3' className={card4SubtitleStyle}>machin at gmail</h2> */}
             </div>
 
         </div>

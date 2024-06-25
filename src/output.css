@@ -610,8 +610,16 @@ video {
   margin-bottom: 24rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-8 {
@@ -620,6 +628,10 @@ video {
 
 .mt-96 {
   margin-top: 24rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -730,6 +742,10 @@ video {
   cursor: crosshair;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .grid-flow-row {
   grid-auto-flow: row;
 }
@@ -774,6 +790,10 @@ video {
   gap: 4rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -811,6 +831,11 @@ video {
   background-color: rgb(36 35 36 / var(--tw-bg-opacity));
 }
 
+.bg-customColorBackground {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 55 64 / var(--tw-bg-opacity));
+}
+
 .bg-customColorCard {
   --tw-bg-opacity: 1;
   background-color: rgb(41 47 56 / var(--tw-bg-opacity));
@@ -826,11 +851,6 @@ video {
   background-color: rgb(255 182 80 / var(--tw-bg-opacity));
 }
 
-.bg-customColorText {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 226 209 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -838,6 +858,12 @@ video {
 .from-customColorBackground {
   --tw-gradient-from: #313740 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(49 55 64 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-customColorBackground2 {
+  --tw-gradient-from: #2e2c2e var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(46 44 46 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -852,6 +878,11 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #313740 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
+.via-customColorBackground2 {
+  --tw-gradient-to: rgb(46 44 46 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #2e2c2e var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
 .via-transparent {
   --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -859,6 +890,10 @@ video {
 
 .to-customColorBackground {
   --tw-gradient-to: #313740 var(--tw-gradient-to-position);
+}
+
+.to-customColorBackground2 {
+  --tw-gradient-to: #2e2c2e var(--tw-gradient-to-position);
 }
 
 .to-transparent {
@@ -933,6 +968,11 @@ video {
   padding-bottom: 24rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -943,10 +983,6 @@ video {
 
 .text-justify {
   text-align: justify;
-}
-
-.text-end {
-  text-align: end;
 }
 
 .font-custom1 {
@@ -1018,11 +1054,6 @@ video {
   letter-spacing: 0.1em;
 }
 
-.text-\[\#e2e2d1\] {
-  --tw-text-opacity: 1;
-  color: rgb(226 226 209 / var(--tw-text-opacity));
-}
-
 .text-customColorBackground {
   --tw-text-opacity: 1;
   color: rgb(49 55 64 / var(--tw-text-opacity));
@@ -1058,11 +1089,6 @@ video {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
-.text-customColorTagBackground {
-  --tw-text-opacity: 1;
-  color: rgb(255 182 80 / var(--tw-text-opacity));
-}
-
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1077,9 +1103,9 @@ video {
 /* Chrome, Edge and Safari */
 
 :root {
-  --scrollbar-track-color: #ffffff;
-  --scrollbar-thumb-color: #bebebe;
-  --scrollbar-thumb-hover-color: #777777;
+  --scrollbar-track-color: #313740;
+  --scrollbar-thumb-color: #292f38;
+  --scrollbar-thumb-hover-color: #e2e2d1;
 }
 
 *::-webkit-scrollbar {

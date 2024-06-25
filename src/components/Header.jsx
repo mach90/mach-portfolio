@@ -2,8 +2,8 @@ import SplineBackground from "./SplineBackground";
 import PortfolioHeaderImg from "../img/portfolio.svg";
 
 export default function Header() {
-    const headerStyle = "flex flex-col justify-center items-center h-screen ";
-    const headerH1Style = "font-custom1 text-5xl text-customColorBackground mb-4";
+    const headerStyle = "flex flex-col justify-start items-center h-screen";
+    const headerH1Style = "font-custom1 text-5xl text-customColorBackground mt-24 mb-4";
     const headerH2Style = "font-custom1 text-2xl text-customColorBackground";
     const headerBigStyle = "absolute bottom-0 left-0";
 

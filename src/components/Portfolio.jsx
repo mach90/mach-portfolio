@@ -36,7 +36,7 @@ export default function Portfolio() {
     /* //////////////////////////////////////////////////
     CARD 3 STYLE
     ////////////////////////////////////////////////// */
-    const cardStyle3 = "flex flex-col justify-center px-60 bg-gradient-to-b from-customColorBackground via-customColorBackground to-customColorBackground  py-96";
+    const cardStyle3 = "flex flex-col justify-center px-60 bg-gradient-to-b from-customColorBackground2 via-customColorBackground2 to-customColorBackground2  py-96";
 
     /* //////////////////////////////////////////////////
     CARD 4 STYLE

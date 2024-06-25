@@ -17,6 +17,7 @@ export default {
       },
       colors: {
         customColorBackground: "#313740",
+        customColorBackground2: "#2e2c2e",
         customColorCard: "#292f38",
         customColorText: "#e2e2d1",
         customColorHighlighted: "#292f38",

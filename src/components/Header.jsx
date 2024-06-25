@@ -10,7 +10,7 @@ export default function Header() {
         <div className={headerStyle}>
             <h1 className={headerH1Style}>John Doe</h1>
             <h2 className={headerH2Style}>Jobtitle namehere</h2>
-            <img src="src/img/portfolio.svg" alt="Logo" width="100%" className={headerBigStyle}/>
+            <img src="../img/portfolio.svg" alt="Logo" width="100%" className={headerBigStyle}/>
             <SplineBackground />
         </div>
     );

@@ -16,7 +16,7 @@ export default function Project({title, description, status, tech, src, src2, li
                 </div>
 
                 <div className="h-full object-cover object-top ">
-                    <button><img src={`./src/img/${src}`} alt={title} className="rounded-xl shadow-md cursor-crosshair"/></button>
+                    <button><img src={`../img/${src}`} alt={title} className="rounded-xl shadow-md cursor-crosshair"/></button>
                 </div>
 
             </div>

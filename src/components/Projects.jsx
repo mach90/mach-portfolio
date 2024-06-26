@@ -14,7 +14,7 @@ const projects = [
     {
       title: "Travel Form Generator",
       status: "In development",
-      description: "Web app to generate a Travel Form PDF via a form.",
+      description: "This app uses React-PDF to generate a Travel Form.",
       tech: "React, Tailwind, React-pdf, typed.js",
       src: TravelFormGeneratorImg,
       link: "https://travelformgenerator.netlify.app/",

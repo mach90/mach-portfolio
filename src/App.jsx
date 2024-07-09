@@ -38,7 +38,7 @@ export default function App() {
   JSX  
   //////////////////////////////////////////////////////////////////////////////////////////////////// */
   return (
-    <div className="grid grid-flow-row cursor-cell ">
+    <div className="grid grid-flow-row cursor-cell font-customFont1">
       <Logo ScrollTo={ScrollTo} />
       <Menu ScrollTo={ScrollTo} />
       <Header />

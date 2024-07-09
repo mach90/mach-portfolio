@@ -3,9 +3,12 @@ IMPORTS
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 import Project from "./Project";
 
-import TravelFormGeneratorImg from "../img/travelformgenerator1a.jpg";
-import BentoEnviroImg from "../img/bentoenviro1a.jpg";
-import BlankImg from "../img/blank1a.jpg";
+import TravelFormGeneratorImg1 from "../img/travelformgenerator1a.jpg";
+import TravelFormGeneratorImg2 from "../img/travelformgenerator1b.jpg";
+import BentoEnviroImg1 from "../img/bentoenviro1a.jpg";
+import BentoEnviroImg2 from "../img/bentoenviro1b.jpg";
+import BlankImg1 from "../img/blank1a.jpg";
+import BlankImg2 from "../img/blank1b.jpg";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 PROJECTS
@@ -16,7 +19,8 @@ const projects = [
       status: "In development",
       description: "This app uses React-PDF to generate a Travel Form.",
       tech: "React, Tailwind, React-pdf, typed.js",
-      src: TravelFormGeneratorImg,
+      src1: TravelFormGeneratorImg1,
+      src2: TravelFormGeneratorImg2,
       link: "https://travelformgenerator.netlify.app/",
       github: "https://github.com/mach90/TFgen",
     },
@@ -25,7 +29,8 @@ const projects = [
       status: "In development",
       description: "Weather, forecast, and more. Bento UI.",
       tech: "React, Tailwind, React-pdf, typed.js",
-      src: BentoEnviroImg,
+      src1: BentoEnviroImg1,
+      src2: BentoEnviroImg2,
       link: "https://bento-enviro.netlify.app/",
       github: "https://github.com/mach90/bento-enviro",
 
@@ -35,7 +40,8 @@ const projects = [
       status: "In development",
       description: "Personal portfolio.",
       tech: "React, Tailwind, Spline, GSAP",
-      src: BlankImg,
+      src1: BlankImg1,
+      src2: BlankImg2,
       link: "https://mach-portfolio.netlify.app/",
       github: "https://github.com/mach90/portfolio",
       },
@@ -44,7 +50,8 @@ const projects = [
       status: "Planning",
       description: "Marketplace",
       tech: "React",
-      src: BlankImg,
+      src1: BlankImg1,
+      src2: BlankImg2,
       link: "",
       github: "",
     },
@@ -53,7 +60,8 @@ const projects = [
       status: "Planning",
       description: "Brochure",
       tech: "React",
-      src: BlankImg,
+      src1: BlankImg1,
+      src2: BlankImg2,
       link: "",
       github: "",
     },
@@ -62,11 +70,12 @@ const projects = [
       status: "Concept",
       description: "Secret project.",
       tech: "React",
-      src: BlankImg,
+      src1: BlankImg1,
+      src2: BlankImg2,
       link: "",
       github: "",
     },
-  ]
+]
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 STYLES

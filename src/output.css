@@ -598,16 +598,32 @@ video {
   margin: 1rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.ml-96 {
+  margin-left: 24rem;
+}
+
+.mr-96 {
+  margin-right: 24rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-24 {
   margin-top: 6rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
+.mt-72 {
+  margin-top: 18rem;
 }
 
 .block {
@@ -630,13 +646,21 @@ video {
   height: 100vh;
 }
 
-.w-screen {
-  width: 100vw;
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 @keyframes jello {
@@ -735,16 +759,20 @@ video {
   gap: 0.25rem;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-40 {
+  gap: 10rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-8 {
@@ -755,20 +783,12 @@ video {
   place-self: end;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border-4 {
@@ -797,7 +817,7 @@ video {
 
 .border-customColorSection4Text3 {
   --tw-border-opacity: 1;
-  border-color: rgb(235 89 57 / var(--tw-border-opacity));
+  border-color: rgb(254 246 242 / var(--tw-border-opacity));
 }
 
 .bg-\[\#242324\] {
@@ -805,9 +825,24 @@ video {
   background-color: rgb(36 35 36 / var(--tw-bg-opacity));
 }
 
+.bg-customColorMenuBackground {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-customColorMenuBackgroundActive {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-customColorSection2a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 20 20 / var(--tw-bg-opacity));
+}
+
 .bg-customColorSection2b {
   --tw-bg-opacity: 1;
-  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+  background-color: rgb(20 20 20 / var(--tw-bg-opacity));
 }
 
 .bg-customColorSection3Text1 {
@@ -815,22 +850,22 @@ video {
   background-color: rgb(20 20 20 / var(--tw-bg-opacity));
 }
 
-.bg-customColorMenuText {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 246 242 / var(--tw-bg-opacity));
-}
-
 .bg-customColorSection3Text2 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 246 242 / var(--tw-bg-opacity));
 }
 
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+.bg-customColorSection4a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 20 20 / var(--tw-bg-opacity));
 }
 
-.bg-gradient-to-bl {
-  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+.bg-\[url\(\'img\/roadhaze4\.jpg\'\)\] {
+  background-image: url('img/roadhaze4.jpg');
+}
+
+.bg-\[url\(\'img\/roadhaze6\.jpg\'\)\] {
+  background-image: url('img/roadhaze6.jpg');
 }
 
 .bg-gradient-to-br {
@@ -843,21 +878,9 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-customColorSection2a {
-  --tw-gradient-from: #141414 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(20 20 20 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-customColorSection3a {
   --tw-gradient-from: #eb5939 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(235 89 57 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-customColorSection4a {
-  --tw-gradient-from: #141414 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(20 20 20 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -870,16 +893,16 @@ video {
   --tw-gradient-to: #d84b2c var(--tw-gradient-to-position);
 }
 
-.to-customColorSection2b {
-  --tw-gradient-to: #333 var(--tw-gradient-to-position);
-}
-
 .to-customColorSection3b {
   --tw-gradient-to: #d84b2c var(--tw-gradient-to-position);
 }
 
-.to-customColorSection4b {
-  --tw-gradient-to: #333 var(--tw-gradient-to-position);
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
 }
 
 .object-cover {
@@ -904,19 +927,14 @@ video {
   padding: 1rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-96 {
   padding-left: 24rem;
   padding-right: 24rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .py-1 {
@@ -924,9 +942,9 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.py-72 {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
 }
 
 .font-customFont1 {
@@ -986,6 +1004,11 @@ video {
   font-weight: 500;
 }
 
+.text-\[\#fef6f2\] {
+  --tw-text-opacity: 1;
+  color: rgb(254 246 242 / var(--tw-text-opacity));
+}
+
 .text-customColorBackground {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -994,6 +1017,11 @@ video {
 .text-customColorMenuText {
   --tw-text-opacity: 1;
   color: rgb(254 246 242 / var(--tw-text-opacity));
+}
+
+.text-customColorMenuTextActive {
+  --tw-text-opacity: 1;
+  color: rgb(235 89 57 / var(--tw-text-opacity));
 }
 
 .text-customColorSection1Text1 {
@@ -1043,17 +1071,17 @@ video {
 
 .text-customColorSection4Text1 {
   --tw-text-opacity: 1;
-  color: rgb(235 89 57 / var(--tw-text-opacity));
+  color: rgb(254 246 242 / var(--tw-text-opacity));
 }
 
 .text-customColorSection4Text2 {
   --tw-text-opacity: 1;
-  color: rgb(254 246 242 / var(--tw-text-opacity));
+  color: rgb(235 89 57 / var(--tw-text-opacity));
 }
 
 .text-customColorSection4Text3 {
   --tw-text-opacity: 1;
-  color: rgb(235 89 57 / var(--tw-text-opacity));
+  color: rgb(254 246 242 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1064,11 +1092,6 @@ video {
 .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
-}
-
-.text-customColorMenuBackground {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .shadow-md {
@@ -1085,9 +1108,9 @@ video {
 /* Chrome, Edge and Safari */
 
 :root {
-  --scrollbar-track-color: #313740;
-  --scrollbar-thumb-color: #292f38;
-  --scrollbar-thumb-hover-color: #e2e2d1;
+  --scrollbar-track-color: #141414;
+  --scrollbar-thumb-color: #eb5939;
+  --scrollbar-thumb-hover-color: #fef6f2;
 }
 
 *::-webkit-scrollbar {
@@ -1121,9 +1144,9 @@ video {
   background-color: var(--scrollbar-thumb-hover-color);
 }
 
-.hover\:border-customColorSection2Text1:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(235 89 57 / var(--tw-border-opacity));
+.hover\:bg-customColorSection2Text1:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 89 57 / var(--tw-bg-opacity));
 }
 
 .hover\:text-yellow-400:hover {

@@ -2,12 +2,12 @@ import { useState } from "react";
 
 export default function TechLogo({title, d, link, icon}) {
     const [isHover, setIsHover] = useState(false);
-    const logoBoxStyle = "relative flex flex-col justify-center items-center gap-1 cursor-pointer p-4 bg-customColorSection2b  hover:border-customColorSection2Text1";
+    const logoBoxStyle = "relative flex flex-col justify-center items-center gap-1 cursor-pointer p-4 bg-customColorSection2b hover:bg-customColorSection2Text1";
     const logoDefaultColor = "#fef6f2";
-    const logoHoverColor = "#eb5939";
+    const logoHoverColor = "#fef6f2";
     const logoSize = "48px";
-    const textDefaultStyle = "text-sm text-customColorSection2Text2";
-    const textHoverStyle = "text-sm text-customColorSection2Text1";
+    const textDefaultStyle = "text-sm text-[#fef6f2]";
+    const textHoverStyle = "text-sm text-[#fef6f2]";
 
     function handleHoverEnter(){
         setIsHover(true);

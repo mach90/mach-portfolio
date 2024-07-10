@@ -3,6 +3,7 @@ import Logo from "./components/Logo";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Portfolio from "./components/Portfolio";
+import { ReactLenis, useLenis } from 'lenis/react'
 
 export default function App() {
 
@@ -34,15 +35,24 @@ export default function App() {
     ScrollTo('top', 'smooth');
   }, []);
 
+  /* //////////////////////////////////////////////////
+  LENIS
+  ////////////////////////////////////////////////// */
+  const lenis = useLenis(({ scroll }) => {
+    // called every scroll
+  })
+
   /* ////////////////////////////////////////////////////////////////////////////////////////////////////
   JSX  
   //////////////////////////////////////////////////////////////////////////////////////////////////// */
   return (
-    <div className="grid grid-flow-row cursor-cell font-customFont1">
-      <Logo ScrollTo={ScrollTo} />
-      <Menu ScrollTo={ScrollTo} />
-      <Header />
-      <Portfolio />
-    </div>
+    <ReactLenis root>
+      <div className="grid grid-flow-row cursor-cell font-customFont1">
+        <Logo ScrollTo={ScrollTo} />
+        <Menu ScrollTo={ScrollTo} />
+        <Header />
+        <Portfolio />
+      </div>
+    </ReactLenis>
   );
 }

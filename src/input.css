@@ -4,9 +4,9 @@
 
 /* Chrome, Edge and Safari */
 :root {
-  --scrollbar-track-color: #313740;
-  --scrollbar-thumb-color: #292f38;
-  --scrollbar-thumb-hover-color: #e2e2d1;
+  --scrollbar-track-color: #141414;
+  --scrollbar-thumb-color: #eb5939;
+  --scrollbar-thumb-hover-color: #fef6f2;
 }
 
 *::-webkit-scrollbar {

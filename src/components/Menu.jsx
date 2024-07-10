@@ -9,12 +9,12 @@ import { Menu as MenuIcon, X, Github, Mail } from 'lucide-react';
 STYLES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 const menuContainerStyle = "fixed right-0 top-0 m-4 flex flex-col z-50";
-const menuButtonToggleStyle = "p-2 text-customColorMenuText";
+const menuButtonToggleStyle = "p-2 bg-customColorMenuBackground text-customColorMenuText";
 const menuButtonToggleAnimation = "animate-jello";
 const menuListStyle = "flex flex-col animate-menuin mt-24 gap-8";
-const menuButtonInactiveStyle = "font-custom1 text-xl text-customColorMenuText p-2";
-const menuButtonActiveStyle = "font-custom1 text-xl bg-customColorMenuText text-customColorMenuBackground p-2";
-const menuSocialsContainerStyle = "fixed bottom-0 right-0 m-4 flex flex-col p-2 gap-4 text-customColorMenuText";
+const menuButtonInactiveStyle = "font-custom1 text-xl bg-customColorMenuBackground text-customColorMenuText p-2";
+const menuButtonActiveStyle = "font-custom1 text-xl bg-customColorMenuBackgroundActive text-customColorMenuTextActive p-2";
+const menuSocialsContainerStyle = "fixed bottom-0 right-0 m-4 flex flex-col p-2 gap-4 bg-customColorMenuBackground text-customColorMenuText";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 MENU COMPONENT

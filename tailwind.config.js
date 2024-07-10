@@ -17,27 +17,33 @@ export default {
       colors: {
         customColorBackground: "#000",
         customColorMenuBackground: "#000",
+        customColorMenuBackgroundActive: "#000",
         customColorMenuText: "#fef6f2",
+        customColorMenuTextActive: "#eb5939",
+
         customColorSection1a: "#eb5939",
         customColorSection1b: "#d84b2c",
         customColorSection1Text1: "#141414",
         customColorSection1Text2: "#fef6f2",
         customColorSection1Text3: "#141414",
+
         customColorSection2a: "#141414",
-        customColorSection2b: "#333",
+        customColorSection2b: "#141414",
         customColorSection2Text1: "#eb5939",
         customColorSection2Text2: "#fef6f2",
         customColorSection2Text3: "#eb5939",
+
         customColorSection3a: "#eb5939",
         customColorSection3b: "#d84b2c",
         customColorSection3Text1: "#141414",
         customColorSection3Text2: "#fef6f2",
         customColorSection3Text3: "#141414",
+
         customColorSection4a: "#141414",
-        customColorSection4b: "#333",
-        customColorSection4Text1: "#eb5939",
-        customColorSection4Text2: "#fef6f2",
-        customColorSection4Text3: "#eb5939",
+        customColorSection4b: "#fef6f2",
+        customColorSection4Text1: "#fef6f2",
+        customColorSection4Text2: "#eb5939",
+        customColorSection4Text3: "#fef6f2",
       },
       fontWeight: {
         100: '100',

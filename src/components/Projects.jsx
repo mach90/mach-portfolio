@@ -90,7 +90,7 @@ export default function Projects() {
     JSX
     ////////////////////////////////////////////////// */
     return (
-        <div id='projects'>
+        <div id='projects' className="flex flex-col gap-40 mt-72">
             {
                 projects.map((project, index) => {
                     return <Project key={index} {...project} />

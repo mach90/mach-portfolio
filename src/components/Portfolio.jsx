@@ -22,37 +22,37 @@ export default function Portfolio() {
     /* //////////////////////////////////////////////////
     CARD 1 STYLE
     ////////////////////////////////////////////////// */
-    const cardStyle1 = "flex flex-col bg-gradient-to-br from-customColorSection1a to-customColorSection1b py-24 px-96 gap-4";
+    const cardStyle1 = "flex flex-col bg-gradient-to-br from-customColorSection1a to-customColorSection1b py-72 px-96 gap-6";
     const card1TitleStyle = "text-4xl font-medium text-customColorSection1Text1";
     const card1SubtitleStyle = "text-5xl font-bold text-customColorSection1Text2";
-    const card1ContentStyle = "text-7xl font-bold text-customColorSection1Text3 p-4 border-4 border-customColorSection1Text3";
+    const card1ContentStyle = "text-7xl font-bold text-customColorSection1Text3 p-4 border-4 border-customColorSection1Text3 mt-16 mb-16";
     const card1StrongStyle = "text-7xl font-bold text-customColorSection1Text2";
 
     /* //////////////////////////////////////////////////
     CARD 2 STYLE
     ////////////////////////////////////////////////// */
-    const cardStyle2 = "flex flex-col bg-gradient-to-b from-customColorSection2a to-customColorSection2b py-24 px-96 gap-4";
+    const cardStyle2 = "flex flex-col bg-[url('img/roadhaze6.jpg')] bg-fixed py-72 px-96 gap-6";
     const card2TitleStyle = "text-4xl font-medium text-customColorSection2Text1";
     const card2SubtitleStyle = "text-5xl font-bold text-customColorSection2Text2";
-    const card2ContentStyle = "text-7xl font-bold text-customColorSection2Text3 p-4 border-4 border-customColorSection2Text3";
+    const card2ContentStyle = "text-7xl font-bold bg-customColorSection2a text-customColorSection2Text3 p-4 border-4 border-customColorSection2Text3 mt-16 mb-16";
     const card2StrongStyle = "text-7xl font-bold text-customColorSection2Text2";
 
     /* //////////////////////////////////////////////////
     CARD 3 STYLE
     ////////////////////////////////////////////////// */
-    const cardStyle3 = "flex flex-col bg-gradient-to-br from-customColorSection3a via-customColorSection3a to-customColorSection3b py-24 px-96 gap-4";
-    const card3TitleStyle = "text-4xl font-medium text-customColorSection3Text1";
-    const card3SubtitleStyle = "text-5xl font-bold text-customColorSection3Text2";
-    const card3ContentStyle = "text-7xl font-bold text-customColorSection3Text3 p-4 border-4 border-customColorSection3Text3";
+    const cardStyle3 = "flex flex-col bg-gradient-to-br from-customColorSection3a via-customColorSection3a to-customColorSection3b py-72 gap-6";
+    const card3TitleStyle = "text-4xl font-medium text-customColorSection3Text1 px-96";
+    const card3SubtitleStyle = "text-5xl font-bold text-customColorSection3Text2 px-96";
+    const card3ContentStyle = "text-7xl font-bold text-customColorSection3Text3 p-4 border-4 border-customColorSection3Text3 mt-16 mb-16 ml-96 mr-96";
     const card3StrongStyle = "text-7xl font-bold text-customColorSection3Text2";
 
     /* //////////////////////////////////////////////////
     CARD 4 STYLE
     ////////////////////////////////////////////////// */
-    const cardStyle4 = "flex flex-col bg-gradient-to-bl from-customColorSection4a to-customColorSection4b py-24 px-96 gap-4";
+    const cardStyle4 = "flex flex-col bg-[url('img/roadhaze4.jpg')] bg-cover py-72 px-96 gap-6";
     const card4TitleStyle = "text-4xl font-medium text-customColorSection4Text1";
     const card4SubtitleStyle = "text-5xl font-bold text-customColorSection4Text2";
-    const card4ContentStyle = "text-7xl font-bold text-customColorSection4Text3 p-4 border-4 border-customColorSection4Text3";
+    const card4ContentStyle = "text-7xl font-bold bg-customColorSection4a text-customColorSection4Text3 p-4 border-4 border-customColorSection4Text3 mt-16 mb-16";
     const card4StrongStyle = "text-7xl font-bold text-customColorSection4Text2";
     
     // useGSAP(() => {

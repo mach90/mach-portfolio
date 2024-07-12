@@ -5,8 +5,8 @@ This is an experimental portfolio using Spline.
 
 ## To do
 - [x] Design
-- [ ] Projects cards
-- [ ] Responsive
+- [x] Projects cards
+- [x] Responsive
 - [ ] Animations
 - [ ] Refactoring
 

@@ -47,7 +47,7 @@ export default function App() {
   //////////////////////////////////////////////////////////////////////////////////////////////////// */
   return (
     <ReactLenis root>
-      <div className="grid grid-flow-row cursor-cell font-customFont1">
+      <div className="grid grid-flow-row cursor-cell font-customFont1 ">
         <Logo ScrollTo={ScrollTo} />
         <Menu ScrollTo={ScrollTo} />
         <Header />

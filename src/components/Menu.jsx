@@ -139,8 +139,8 @@ export default function Menu({ScrollTo}) {
             </div>
             
             {isVisible && <div className={menuListStyle}>
-                    <button onClick={(e) => handleClick(e, 'journey', 'smooth')} id="journey-btn" className={isActive === 'journey-btn' ? menuButtonActiveStyle : menuButtonInactiveStyle}>Journey</button>
-                    <button onClick={(e) => handleClick(e, 'technologies', 'smooth')} id="technologies-btn" className={isActive === 'technologies-btn' ? menuButtonActiveStyle : menuButtonInactiveStyle}>Technologies</button>
+                    <button onClick={(e) => handleClick(e, 'journey', 'smooth', 'start')} id="journey-btn" className={isActive === 'journey-btn' ? menuButtonActiveStyle : menuButtonInactiveStyle}>Journey</button>
+                    <button onClick={(e) => handleClick(e, 'technologies', 'smooth', 'start')} id="technologies-btn" className={isActive === 'technologies-btn' ? menuButtonActiveStyle : menuButtonInactiveStyle}>Technologies</button>
                     <button onClick={(e) => handleClick(e, 'showcase', 'smooth', 'start')} id="showcase-btn" className={isActive === 'showcase-btn' ? menuButtonActiveStyle : menuButtonInactiveStyle}>Showcase</button>
                     <button onClick={(e) => handleClick(e, 'together', 'smooth')} id="together-btn" className={isActive === 'together-btn' ? menuButtonActiveStyle : menuButtonInactiveStyle}>Together</button>
             </div>}

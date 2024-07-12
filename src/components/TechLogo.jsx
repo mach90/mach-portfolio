@@ -17,9 +17,11 @@ export default function TechLogo({title, d, link, icon}) {
         setIsHover(false);
     }
 
+        
+
     return (
         <a href={link} target="_blank">
-            <div className={logoBoxStyle} onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave}>
+            <div id="logo" className={logoBoxStyle} onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave}>
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width={logoSize} height={logoSize}>
                     <title>{title}</title>
                     <path d={d} fill={isHover ? logoHoverColor : logoDefaultColor}/>

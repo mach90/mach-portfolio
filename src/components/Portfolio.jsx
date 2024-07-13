@@ -7,7 +7,8 @@ import TechLogos from "./TechLogos";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+import { TextPlugin } from "gsap/TextPlugin";
+gsap.registerPlugin(useGSAP, ScrollTrigger, TextPlugin);
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 PORTFOLIO COMPONENT
@@ -72,14 +73,17 @@ export default function Portfolio() {
     // }, []);
 
     useGSAP(() => {
-        gsap.fromTo("#card1title1", {opacity:0, y:30}, {opacity:1, y:0, duration:1, scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card1title2", {opacity:0, y:30}, {opacity:1, y:0, duration:1, scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card2title1", {opacity:0, y:30}, {opacity:1, y:0, duration:1, scrollTrigger: {trigger: '#card2title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card2title2", {opacity:0, y:30}, {opacity:1, y:0, duration:1, scrollTrigger: {trigger: '#card2title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card3title1", {opacity:0, y:30}, {opacity:1, y:0, duration:1, scrollTrigger: {trigger: '#card3title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card3title2", {opacity:0, y:30}, {opacity:1, y:0, duration:1, scrollTrigger: {trigger: '#card3title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card4title1", {opacity:0, y:30}, {opacity:1, y:0, duration:1, scrollTrigger: {trigger: '#card4title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card4title2", {opacity:0, y:30}, {opacity:1, y:0, duration:1, scrollTrigger: {trigger: '#card4title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card1title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card1title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card2title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card2title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card2title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card2title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card3title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card3title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card3title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card3title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card4title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card4title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card4title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card4title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        
+        gsap.from("#card1title3", {opacity: 0, text:"", scrollTrigger: {trigger: '#card1title3', toggleActions: "play none none none", start: "center 90%", end: "center 40%", markers: false, scrub: 3,}, duration:3});
+        // gsap.from("#card1title3strong", {opacity: 0, color: "black", scrollTrigger: {trigger: '#card1title3', toggleActions: "play none none none", start: "top 80%", end: "bottom 80%", markers : true}, duration:3});
     }, []);
 
     return (
@@ -87,7 +91,8 @@ export default function Portfolio() {
             <div id='journey' className={cardStyle1}>
                 <h1 id='card1title1' className={card1TitleStyle}>A non-linear journey</h1>
                 <h2 id='card1title2' className={card1SubtitleStyle}>Many roads that sometimes converge.</h2>
-                <h3 id='card1title3' className={card1ContentStyle}>I aim to create <strong className={card1StrongStyle}>meaningfull web applications</strong> and <strong className={card1StrongStyle}>immersive experiences</strong> that <strong className={card1StrongStyle}>tell stories</strong> and <strong className={card1StrongStyle}>create new avenues</strong>.</h3>
+                <h3 id='card1title3' className={card1ContentStyle}>I aim to create meaningfull web applications and immersive experiences that tell stories and create new avenues.</h3>
+                {/* <h3 id='card1title3' className={card1ContentStyle}>I aim to create <strong id="card1title3strong" className={card1StrongStyle}>meaningfull web applications</strong> and <strong id="card1title3strong" className={card1StrongStyle}>immersive experiences</strong> that <strong className={card1StrongStyle}>tell stories</strong> and <strong id="card1title3strong" className={card1StrongStyle}>create new avenues</strong>.</h3> */}
             </div>
 
             <div id='technologies' className={cardStyle2}>

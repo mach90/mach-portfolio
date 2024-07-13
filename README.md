@@ -36,3 +36,8 @@ This is an experimental portfolio using Spline.
 - Projects showcase
 - Add a Motto section ? or some "arguments" to better understand my personality and thinking ? I can do this for you etc
 - Then finish by the usual "contact me"
+
+//TODO
+- console.log indique une erreur "deux Spline", investiger
+- regler le problème d'image bg et Spline qui ne s'affiche pas
+- ecran ne s'ajuste pas correctement sur mobile

@@ -42,7 +42,7 @@ const projects = [
       status: "In development",
       bar: 30,
       description: "Personal portfolio.",
-      techs: ["React", "Tailwind", "Spline", "GSAP", "Spline"],
+      techs: ["React", "Tailwind", "Spline", "GSAP"],
       src1: BlankImg1,
       src2: BlankImg2,
       link: "https://mach-portfolio.netlify.app/",

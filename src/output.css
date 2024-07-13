@@ -859,12 +859,12 @@ video {
   background-image: url('img/roadhaze5.jpg');
 }
 
-.bg-\[url\(\'img\/roadhaze6\.jpg\'\)\] {
-  background-image: url('img/roadhaze6.jpg');
-}
-
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'img\/roadhaze6\.jpg\'\)\] {
+  background-image: url('img/roadhaze6.jpg');
 }
 
 .from-customColorSection1a {

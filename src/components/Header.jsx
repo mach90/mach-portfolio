@@ -7,8 +7,8 @@ gsap.registerPlugin(useGSAP);
 export default function Header() {
     const headerStyle = "relative flex flex-col gap-1 justify-center items-start h-screen";
     // const headerStyle = "relative flex flex-col gap-1 justify-center items-start h-screen bg-[url('/src/img/background/volcano1.jpg')] bg-bottom bg-cover";
-    const volcanoStyle = "fixed h-screen w-screen -z-10 bg-[url('/src/img/background/volcano.png')] bg-center bg-cover";
-    const skyStyle = "absolute h-screen w-screen -z-20 bg-[url('/src/img/background/sky.jpg')] bg-bottom bg-cover";
+    const volcanoStyle = "fixed h-screen w-full -z-10 bg-[url('/src/img/background/volcano.png')] bg-center bg-cover";
+    const skyStyle = "absolute h-screen w-full -z-20 bg-[url('/src/img/background/sky.jpg')] bg-bottom bg-cover";
     const headerH1Style = "ml-24 font-custom1 text-2xl md:text-3xl font-semibold p-1 text-customColorMenuText bg-customColorBackground";
     const headerH2Style = "ml-24 font-custom1 text-4xl md:text-6xl font-semibold p-1 text-customColorMenuText bg-customColorBackground";
     const headerBigStyle = "absolute bottom-0 left-0";

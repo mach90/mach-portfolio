@@ -22,7 +22,7 @@ export default {
         customColorMenuTextActive: "#eb5939",
 
         customColorSection1a: "#eb5939",
-        customColorSection1b: "#d84b2c",
+        customColorSection1b: "#ff7a3d",
         customColorSection1Text1: "#141414",
         customColorSection1Text2: "#fef6f2",
         customColorSection1Text3: "#141414",
@@ -34,7 +34,7 @@ export default {
         customColorSection2Text3: "#eb5939",
 
         customColorSection3a: "#eb5939",
-        customColorSection3b: "#d84b2c",
+        customColorSection3b: "#eb3938",
         customColorSection3Text1: "#141414",
         customColorSection3Text2: "#fef6f2",
         customColorSection3Text3: "#141414",

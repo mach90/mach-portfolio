@@ -12,7 +12,7 @@ This is an experimental portfolio using Spline.
 
 ## Features checklist
 - [x] Smooth scrolling with GSAP Lenis
-- [x] Threejs interactive with Spline
+- [-] Threejs interactive with Spline
 - [ ] Mouse cursor
 - [ ] Text reveal animation
 - [ ] Menu text interaction animation
@@ -38,6 +38,4 @@ This is an experimental portfolio using Spline.
 - Then finish by the usual "contact me"
 
 //TODO
-- console.log indique une erreur "deux Spline", investiger
-- regler le problème d'image bg et Spline qui ne s'affiche pas
 - ecran ne s'ajuste pas correctement sur mobile

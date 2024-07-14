@@ -22,7 +22,7 @@ export default function Portfolio() {
     /* //////////////////////////////////////////////////
     CARD 1 STYLE
     ////////////////////////////////////////////////// */
-    const cardStyle1 = "flex flex-col bg-gradient-to-br from-customColorSection1a to-customColorSection1b py-48 md:py-64 lg:py-80 xl:py-96 px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6";
+    const cardStyle1 = "flex flex-col bg-gradient-to-b from-customColorSection1a to-customColorSection1b py-48 md:py-64 lg:py-80 xl:py-96 px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6";
     const card1TitleStyle = "text-3xl md:text-4xl font-medium text-customColorSection1Text1";
     const card1SubtitleStyle = "text-4xl md:text-5xl font-bold text-customColorSection1Text2";
     const card1ContentStyle = "text-5xl md:text-7xl font-bold text-customColorSection1Text3 p-4 border-4 border-customColorSection1Text3 mt-16 mb-16";
@@ -31,7 +31,7 @@ export default function Portfolio() {
     /* //////////////////////////////////////////////////
     CARD 2 STYLE
     ////////////////////////////////////////////////// */
-    const cardStyle2 = "flex flex-col bg-[url('img/roadhaze6.jpg')] bg-fixed bg-cover bg-bottom py-48 md:py-64 lg:py-80 xl:py-96 px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6";
+    const cardStyle2 = "flex flex-col bg-[url('/src/img/background/volcano2.jpg')] bg-fixed bg-cover bg-bottom py-48 md:py-64 lg:py-80 xl:py-96 px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6";
     const card2TitleStyle = "text-3xl md:text-4xl font-medium text-customColorSection2Text1";
     const card2SubtitleStyle = "text-4xl md:text-5xl font-bold text-customColorSection2Text2";
     // const card2ContentStyle = "text-5xl md:text-7xl font-bold bg-customColorSection2a text-customColorSection2Text3 p-4 border-4 border-customColorSection2Text3 mt-16 mb-16";
@@ -49,7 +49,7 @@ export default function Portfolio() {
     /* //////////////////////////////////////////////////
     CARD 4 STYLE
     ////////////////////////////////////////////////// */
-    const cardStyle4 = "flex flex-col justify-center bg-[url('img/roadhaze4.jpg')] bg-cover bg-bottom h-screen px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6";
+    const cardStyle4 = "flex flex-col justify-center bg-[url('/src/img/background/sand2.jpg')] bg-cover bg-bottom h-screen px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6";
     const card4TitleStyle = "text-3xl md:text-4xl font-medium text-customColorSection4Text1";
     const card4SubtitleStyle = "text-4xl md:text-5xl font-bold text-customColorSection4Text2";
     const card4ContentStyle = "text-5xl md:text-7xl font-bold bg-customColorSection4a text-customColorSection4Text3 p-4 border-4 border-customColorSection4Text3 mt-16";
@@ -76,13 +76,15 @@ export default function Portfolio() {
         gsap.fromTo("#card1title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
         gsap.fromTo("#card1title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
         gsap.fromTo("#card2title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card2title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card2title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card2title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card2title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card2title2', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
         gsap.fromTo("#card3title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card3title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card3title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card3title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card3title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card3title2', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
         gsap.fromTo("#card4title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card4title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
         gsap.fromTo("#card4title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card4title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
         
-        gsap.from("#card1title3", {opacity: 0, text:"", scrollTrigger: {trigger: '#card1title3', toggleActions: "play none none none", start: "center 90%", end: "center 40%", markers: false, scrub: 3,}, duration:3});
+        gsap.fromTo("#card1title3", {opacity:0, y:300}, {opacity:1, y:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card1title3', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#card4title3", {opacity:0, x:100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card4title3', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        // gsap.from("#card1title3", {opacity: 0, text:"I aim to create meaningfull web applications and immersive experiences that tell stories and create new avenues.", color: "orange", scrollTrigger: {trigger: '#card1title3', toggleActions: "play none none none", start: "center 90%", end: "center 40%", markers: false, scrub: 3,}, duration:3});
         // gsap.from("#card1title3strong", {opacity: 0, color: "black", scrollTrigger: {trigger: '#card1title3', toggleActions: "play none none none", start: "top 80%", end: "bottom 80%", markers : true}, duration:3});
     }, []);
 
@@ -91,8 +93,8 @@ export default function Portfolio() {
             <div id='journey' className={cardStyle1}>
                 <h1 id='card1title1' className={card1TitleStyle}>A non-linear journey</h1>
                 <h2 id='card1title2' className={card1SubtitleStyle}>Many roads that sometimes converge.</h2>
-                <h3 id='card1title3' className={card1ContentStyle}>I aim to create meaningfull web applications and immersive experiences that tell stories and create new avenues.</h3>
-                {/* <h3 id='card1title3' className={card1ContentStyle}>I aim to create <strong id="card1title3strong" className={card1StrongStyle}>meaningfull web applications</strong> and <strong id="card1title3strong" className={card1StrongStyle}>immersive experiences</strong> that <strong className={card1StrongStyle}>tell stories</strong> and <strong id="card1title3strong" className={card1StrongStyle}>create new avenues</strong>.</h3> */}
+                {/* <h3 id='card1title3' className={card1ContentStyle}>I aim to create meaningfull web applications and immersive experiences that tell stories and create new avenues.</h3> */}
+                <h3 id='card1title3' className={card1ContentStyle}>I aim to create <strong id="card1title3strong" className={card1StrongStyle}>meaningfull web applications</strong> and <strong id="card1title3strong" className={card1StrongStyle}>immersive experiences</strong> that <strong className={card1StrongStyle}>tell stories</strong> and <strong id="card1title3strong" className={card1StrongStyle}>create new avenues</strong>.</h3>
             </div>
 
             <div id='technologies' className={cardStyle2}>
@@ -112,7 +114,7 @@ export default function Portfolio() {
             <div id='together' className={cardStyle4}>
                 <h1 id='card4title1' className={card4TitleStyle}>Together</h1>
                 <h2 id='card4title2' className={card4SubtitleStyle}>We can do great things</h2>
-                <h3 id='card4title3' className={card4ContentStyle}>You can contact me on my email: <strong className={card4StrongStyle}>machin at gmail</strong>.com</h3>
+                <h3 id='card4title3' className={card4ContentStyle}>I check my mailbox regularly: <strong className={card4StrongStyle}>machin at gmail</strong>.com</h3>
             </div>
 
         </div>

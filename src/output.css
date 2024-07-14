@@ -590,6 +590,10 @@ video {
   z-index: -10;
 }
 
+.-z-20 {
+  z-index: -20;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -650,8 +654,16 @@ video {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 @keyframes jello {
@@ -740,10 +752,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-center {
@@ -851,20 +859,32 @@ video {
   background-color: rgb(20 20 20 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'img\/roadhaze4\.jpg\'\)\] {
-  background-image: url('img/roadhaze4.jpg');
+.bg-\[url\(\'\/src\/img\/background\/sand2\.jpg\'\)\] {
+  background-image: url('/src/img/background/sand2.jpg');
 }
 
-.bg-\[url\(\'img\/roadhaze5\.jpg\'\)\] {
-  background-image: url('img/roadhaze5.jpg');
+.bg-\[url\(\'\/src\/img\/background\/sky\.jpg\'\)\] {
+  background-image: url('/src/img/background/sky.jpg');
+}
+
+.bg-\[url\(\'\/src\/img\/background\/volcano\.png\'\)\] {
+  background-image: url('/src/img/background/volcano.png');
+}
+
+.bg-\[url\(\'\/src\/img\/background\/volcano1\.jpg\'\)\] {
+  background-image: url('/src/img/background/volcano1.jpg');
+}
+
+.bg-\[url\(\'\/src\/img\/background\/volcano2\.jpg\'\)\] {
+  background-image: url('/src/img/background/volcano2.jpg');
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'img\/roadhaze6\.jpg\'\)\] {
-  background-image: url('img/roadhaze6.jpg');
 }
 
 .from-customColorSection1a {
@@ -880,11 +900,11 @@ video {
 }
 
 .to-customColorSection1b {
-  --tw-gradient-to: #d84b2c var(--tw-gradient-to-position);
+  --tw-gradient-to: #ff7a3d var(--tw-gradient-to-position);
 }
 
 .to-customColorSection3b {
-  --tw-gradient-to: #d84b2c var(--tw-gradient-to-position);
+  --tw-gradient-to: #eb3938 var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -897,6 +917,10 @@ video {
 
 .bg-bottom {
   background-position: bottom;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .object-cover {
@@ -1233,10 +1257,6 @@ progress::-moz-progress-bar {
 
   .lg\:flex-row {
     flex-direction: row;
-  }
-
-  .lg\:bg-none {
-    background-image: none;
   }
 
   .lg\:py-80 {

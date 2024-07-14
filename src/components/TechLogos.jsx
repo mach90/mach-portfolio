@@ -17,10 +17,10 @@ TECHLOGOS COMPONENT
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 export default function TechLogos() {
     useGSAP(() => {
-        gsap.fromTo("#logosbox1 > div", {opacity:0, scale:0.2}, {opacity:1, scale:1, duration:0.75, stagger:0.1, transformOrigin: "50% 50%", ease: "expo.out", scrollTrigger: {trigger: '#logosbox1', toggleActions: "play none none none", start: "top 50%", end: "bottom 20%", pin: false, markers: false,}});
-        gsap.fromTo("#logosbox2 > div", {opacity:0, scale:0.2}, {opacity:1, scale:1, duration:0.75, stagger:0.1, transformOrigin: "50% 50%", ease: "expo.out", scrollTrigger: {trigger: '#logosbox2', toggleActions: "play none none none", start: "top 50%", end: "bottom 20%", pin: false, markers: false,}});
-        gsap.fromTo("#logosbox3 > div", {opacity:0, scale:0.2}, {opacity:1, scale:1, duration:0.75, stagger:0.1, transformOrigin: "50% 50%", ease: "expo.out", scrollTrigger: {trigger: '#logosbox3', toggleActions: "play none none none", start: "top 50%", end: "bottom 20%", pin: false, markers: false,}});
-        gsap.fromTo("#logosbox4 > div", {opacity:0, scale:0.2}, {opacity:1, scale:1, duration:0.75, stagger:0.1, transformOrigin: "50% 50%", ease: "expo.out", scrollTrigger: {trigger: '#logosbox4', toggleActions: "play none none none", start: "top 50%", end: "bottom 20%", pin: false, markers: false,}});
+        gsap.fromTo("#logosbox1 > div", {opacity:0, scale:0.2}, {opacity:1, scale:1, duration:0.75, stagger:0.1, transformOrigin: "50% 50%", ease: "expo.out", scrollTrigger: {trigger: '#logosbox1', toggleActions: "play none none none", start: "top 75%", end: "bottom 20%", pin: false, markers: false,}});
+        gsap.fromTo("#logosbox2 > div", {opacity:0, scale:0.2}, {opacity:1, scale:1, duration:0.75, stagger:0.1, transformOrigin: "50% 50%", ease: "expo.out", scrollTrigger: {trigger: '#logosbox2', toggleActions: "play none none none", start: "top 75%", end: "bottom 20%", pin: false, markers: false,}});
+        gsap.fromTo("#logosbox3 > div", {opacity:0, scale:0.2}, {opacity:1, scale:1, duration:0.75, stagger:0.1, transformOrigin: "50% 50%", ease: "expo.out", scrollTrigger: {trigger: '#logosbox3', toggleActions: "play none none none", start: "top 75%", end: "bottom 20%", pin: false, markers: false,}});
+        gsap.fromTo("#logosbox4 > div", {opacity:0, scale:0.2}, {opacity:1, scale:1, duration:0.75, stagger:0.1, transformOrigin: "50% 50%", ease: "expo.out", scrollTrigger: {trigger: '#logosbox4', toggleActions: "play none none none", start: "top 75%", end: "bottom 20%", pin: false, markers: false,}});
     }, []);
 
     /* //////////////////////////////////////////////////

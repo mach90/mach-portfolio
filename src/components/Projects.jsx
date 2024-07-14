@@ -3,12 +3,12 @@ IMPORTS
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 import Project from "./Project";
 
-import TravelFormGeneratorImg1 from "../img/travelformgenerator1a.jpg";
-import TravelFormGeneratorImg2 from "../img/travelformgenerator1b.jpg";
-import BentoEnviroImg1 from "../img/bentoenviro1a.jpg";
-import BentoEnviroImg2 from "../img/bentoenviro1b.jpg";
-import BlankImg1 from "../img/blank1a.jpg";
-import BlankImg2 from "../img/blank1b.jpg";
+import TravelFormGeneratorImg1 from "../img/projects/travelformgenerator1a.jpg";
+import TravelFormGeneratorImg2 from "../img/projects/travelformgenerator1b.jpg";
+import BentoEnviroImg1 from "../img/projects/bentoenviro1a.jpg";
+import BentoEnviroImg2 from "../img/projects/bentoenviro1b.jpg";
+import BlankImg1 from "../img/projects/blank1a.jpg";
+import BlankImg2 from "../img/projects/blank1b.jpg";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 PROJECTS

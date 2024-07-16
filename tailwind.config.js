@@ -27,7 +27,7 @@ export default {
         customColorSection1Text2: "#fef6f2",
         customColorSection1Text3: "#141414",
 
-        customColorSection2a: "#141414",
+        customColorSection2a: "#000",
         customColorSection2b: "#141414",
         customColorSection2Text1: "#eb5939",
         customColorSection2Text2: "#fef6f2",
@@ -40,7 +40,7 @@ export default {
         customColorSection3Text3: "#141414",
 
         customColorSection4a: "#141414",
-        customColorSection4b: "#fef6f2",
+        customColorSection4b: "#000",
         customColorSection4Text1: "#fef6f2",
         customColorSection4Text2: "#eb5939",
         customColorSection4Text3: "#fef6f2",

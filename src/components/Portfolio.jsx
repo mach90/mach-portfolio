@@ -17,104 +17,86 @@ export default function Portfolio() {
     /* //////////////////////////////////////////////////
     CONTAINER STYLE
     ////////////////////////////////////////////////// */
-    const portofolioStyle = "flex flex-col";
+    const portofolioContainerStyle = "flex flex-col overflow-hidden";
 
     /* //////////////////////////////////////////////////
-    CARD 1 STYLE
+    JOURNEY SECTION
     ////////////////////////////////////////////////// */
-    const cardStyle1 = "flex flex-col bg-gradient-to-b from-customColorSection1a to-customColorSection1b py-48 md:py-64 lg:py-80 xl:py-96 px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6";
-    const card1TitleStyle = "text-3xl md:text-4xl font-medium text-customColorSection1Text1";
-    const card1SubtitleStyle = "text-4xl md:text-5xl font-bold text-customColorSection1Text2";
-    const card1ContentStyle = "text-5xl md:text-7xl font-bold text-customColorSection1Text3 p-4 border-4 border-customColorSection1Text3 mt-16 mb-16";
-    const card1StrongStyle = "text-5xl md:text-7xl font-bold text-customColorSection1Text2";
+    const journeyContainerStyle = "flex flex-col bg-gradient-to-b from-customColorSection1a to-customColorSection1b py-48 md:py-64 lg:py-80 xl:py-96 px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6 overflow-hidden";
+    const journeyTitleStyle = "text-3xl lg:text-4xl font-medium text-customColorSection1Text1";
+    const journeySubtitleStyle = "text-3xl lg:text-5xl font-bold text-customColorSection1Text2";
+    const journeyContentStyle = "text-4xl lg:text-7xl font-bold text-customColorSection1Text3 p-4 border-4 border-customColorSection1Text3 mt-16 mb-16";
+    const journeyStrongStyle = "text-4xl lg:text-7xl font-bold text-customColorSection1Text2";
 
     /* //////////////////////////////////////////////////
-    CARD 2 STYLE
+    TECHNOLOGIES SECTION
     ////////////////////////////////////////////////// */
-    const cardStyle2 = "flex flex-col bg-[url('/src/img/background/volcano2.jpg')] bg-fixed bg-cover bg-bottom py-48 md:py-64 lg:py-80 xl:py-96 px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6";
-    const card2TitleStyle = "text-3xl md:text-4xl font-medium text-customColorSection2Text1";
-    const card2SubtitleStyle = "text-4xl md:text-5xl font-bold text-customColorSection2Text2";
-    // const card2ContentStyle = "text-5xl md:text-7xl font-bold bg-customColorSection2a text-customColorSection2Text3 p-4 border-4 border-customColorSection2Text3 mt-16 mb-16";
-    // const card2StrongStyle = "text-5xl md:text-7xl font-bold text-customColorSection2Text2";
+    const technologiesContainerStyle = "flex flex-col bg-gradient-to-tr from-customColorSection2a to-customColorSection2b py-48 md:py-64 lg:py-80 xl:py-96 px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6 overflow-hidden";
+    const technologiesTitleStyle = "text-3xl lg:text-4xl font-medium text-customColorSection2Text1";
+    const technologiesSubtitleStyle = "text-3xl lg:text-5xl font-bold text-customColorSection2Text2";
 
     /* //////////////////////////////////////////////////
-    CARD 3 STYLE
+    SHOWCASE SECTION
     ////////////////////////////////////////////////// */
-    const cardStyle3 = "flex flex-col bg-gradient-to-br from-customColorSection3a to-customColorSection3b py-48 md:py-64 lg:py-80 xl:py-96 gap-2 xl:gap-6";
-    const card3TitleStyle = "text-3xl md:text-4xl font-medium text-customColorSection3Text1 px-8 sm:px-[10%] md:px-[20%]";
-    const card3SubtitleStyle = "text-4xl md:text-5xl font-bold text-customColorSection3Text2 px-8 sm:px-[10%] md:px-[20%]";
-    // const card3ContentStyle = "text-5xl md:text-7xl font-bold text-customColorSection3Text3 p-4 border-4 border-customColorSection3Text3 mt-16 mb-16";
-    // const card3StrongStyle = "text-5xl md:text-7xl font-bold text-customColorSection3Text2";
+    const showcaseContainerStyle = "flex flex-col bg-gradient-to-br from-customColorSection3a to-customColorSection3b py-48 md:py-64 lg:py-80 xl:py-96 gap-2 xl:gap-6 overflow-hidden";
+    const showcaseTitleStyle = "text-3xl lg:text-4xl font-medium text-customColorSection3Text1 px-8 sm:px-[10%] md:px-[20%]";
+    const showcaseSubtitleStyle = "text-3xl lg:text-5xl font-bold text-customColorSection3Text2 px-8 sm:px-[10%] md:px-[20%]";
 
     /* //////////////////////////////////////////////////
     CARD 4 STYLE
     ////////////////////////////////////////////////// */
-    const cardStyle4 = "flex flex-col justify-center bg-[url('/src/img/background/sand2.jpg')] bg-cover bg-bottom h-screen px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6";
-    const card4TitleStyle = "text-3xl md:text-4xl font-medium text-customColorSection4Text1";
-    const card4SubtitleStyle = "text-4xl md:text-5xl font-bold text-customColorSection4Text2";
-    const card4ContentStyle = "text-5xl md:text-7xl font-bold bg-customColorSection4a text-customColorSection4Text3 p-4 border-4 border-customColorSection4Text3 mt-16";
-    const card4StrongStyle = "text-5xl md:text-7xl font-bold text-customColorSection4Text2";
+    const togetherContainerStyle = "flex flex-col justify-center bg-gradient-to-br from-customColorSection4a to-customColorSection4b h-screen px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6 overflow-hidden";
+    const togetherTitleStyle = "text-3xl lg:text-4xl font-medium text-customColorSection4Text1";
+    const togetherSubtitleStyle = "text-3xl lg:text-5xl font-bold text-customColorSection4Text2";
+    const togetherContentStyle = "text-4xl lg:text-7xl font-bold bg-customColorSection4a text-customColorSection4Text3 p-4 border-4 border-customColorSection4Text3 mt-16";
+    const togetherStrongStyle = "text-4xl lg:text-7xl font-bold text-customColorSection4Text2";
     
-    // useGSAP(() => {
-    //     gsap.fromTo("#card1title1", {x: 50, opacity: 0,},{x: 0, duration: 1, opacity: 1, scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "top 60%", end: "top 40%", pin: false, markers : false,}});
-    //     gsap.fromTo("#card1title2", {x: 50, opacity: 0},{x: 0, duration: 1, opacity: 1, scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "top 60%", end: "top 40%", pin: false, markers : false,}});
-    //     gsap.fromTo("#card1title3", {opacity: 0}, {duration: 1, opacity: 1, scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "bottom 70%", end: "top 30%", pin: false, markers : false,}});
-
-    //     gsap.fromTo("#card2title1", {opacity: 0, text: "73XX-0X0-135"}, {opacity: 1, duration: 1.3, text: "TECHNOLOGIES", scrollTrigger: {trigger: '#card2title1', toggleActions: "play none none none", start: "top 50%", end: "bottom 40%", markers : false,}});
-    //     gsap.fromTo("#logosbox1", {x: -500, opacity: 0,},{x: 0, duration: 1, opacity: 1, scrollTrigger: {trigger: '#logosbox', toggleActions: "play none none none", start: "top 50%", end: "top 40%", scrub: false, markers : false,}});
-    //     gsap.fromTo("#logosbox2", {x: 500, opacity: 0,},{x: 0, duration: 1, opacity: 1, scrollTrigger: {trigger: '#logosbox', toggleActions: "play none none none", start: "top 50%", end: "top 40%", scrub: false, markers : false,}});
-    //     gsap.fromTo("#logosbox3", {x: -500, opacity: 0,},{x: 0, duration: 1, opacity: 1, scrollTrigger: {trigger: '#logosbox', toggleActions: "play none none none", start: "top 50%", end: "top 40%", scrub: false, markers : false,}});
-    //     gsap.fromTo("#logosbox4", {x: 500, opacity: 0,},{x: 0, duration: 1, opacity: 1, scrollTrigger: {trigger: '#logosbox', toggleActions: "play none none none", start: "top 50%", end: "top 40%", scrub: false, markers : false,}});
-    //     gsap.to("#logosbox", {rotate: 0, scrollTrigger: {trigger: '#logosbox', toggleActions: "play none none none", start: "75% 80%", end: "center 40%", scrub: 3, pin: false, markers : false,}});
-
-    //     gsap.fromTo("#together1", {opacity: 0}, {opacity: 1, duration: 3, scrollTrigger: {trigger: '#together1', toggleActions: "play none none none", start: "top 50%", end: "bottom 40%", markers : false,}});
-    //     gsap.fromTo("#together2", {opacity: 0}, {opacity: 1, duration: 3, delay: 1.2, scrollTrigger: {trigger: '#together1', toggleActions: "play none none none", start: "top 50%", end: "bottom 40%", markers : false,}});
-    //     // gsap.fromTo("#together3", {opacity: 0}, {opacity: 1, duration: 3, delay: 2.4, scrollTrigger: {trigger: '#together1', toggleActions: "play none none none", start: "top 50%", end: "bottom 40%", markers : false,}});
-    // }, []);
-
     useGSAP(() => {
-        gsap.fromTo("#card1title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card1title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card1title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card2title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card2title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card2title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card2title2', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card3title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card3title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card3title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card3title2', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card4title1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card4title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card4title2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card4title1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#journeyTitle1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#journeyTitle1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#journeyTitle2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#journeyTitle1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#technologiesTitle1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#technologiesTitle1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#technologiesTitle2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#technologiesTitle2', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#showcaseTitle1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#showcaseTitle1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#showcaseTitle2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#showcaseTitle2', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#togetherTitle1", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#togetherTitle1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#togetherTitle2", {opacity:0, x:-100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#togetherTitle1', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
         
-        gsap.fromTo("#card1title3", {opacity:0, y:300}, {opacity:1, y:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card1title3', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        gsap.fromTo("#card4title3", {opacity:0, x:100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#card4title3', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
-        // gsap.from("#card1title3", {opacity: 0, text:"I aim to create meaningfull web applications and immersive experiences that tell stories and create new avenues.", color: "orange", scrollTrigger: {trigger: '#card1title3', toggleActions: "play none none none", start: "center 90%", end: "center 40%", markers: false, scrub: 3,}, duration:3});
-        // gsap.from("#card1title3strong", {opacity: 0, color: "black", scrollTrigger: {trigger: '#card1title3', toggleActions: "play none none none", start: "top 80%", end: "bottom 80%", markers : true}, duration:3});
+        gsap.fromTo("#journeyTitle3", {opacity:0, y:300}, {opacity:1, y:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#journeyTitle3', toggleActions: "play none none none", start: "top 100%", end: "bottom 20%", pin: false, markers : false,}});
+        gsap.fromTo("#togetherTitle3", {opacity:0, x:100}, {opacity:1, x:0, duration:1, ease:"expo.out", scrollTrigger: {trigger: '#togetherTitle3', toggleActions: "play none none none", start: "top 80%", end: "bottom 20%", pin: false, markers : false,}});
+
+        // gsap.to("#projectsContainer", {
+        //     x: -1000,
+        //     duration: 3,
+        //     scrollTrigger: {trigger: '#projectsContainer', toggleActions: "play none none none", start: "bottom 80%", end: "bottom 20%", pin: true, scrub:1, markers : true}
+        // });
+        
     }, []);
 
     return (
-        <div className={portofolioStyle}>
-            <div id='journey' className={cardStyle1}>
-                <h1 id='card1title1' className={card1TitleStyle}>A non-linear journey</h1>
-                <h2 id='card1title2' className={card1SubtitleStyle}>Many roads that sometimes converge.</h2>
-                {/* <h3 id='card1title3' className={card1ContentStyle}>I aim to create meaningfull web applications and immersive experiences that tell stories and create new avenues.</h3> */}
-                <h3 id='card1title3' className={card1ContentStyle}>I aim to create <strong id="card1title3strong" className={card1StrongStyle}>meaningfull web applications</strong> and <strong id="card1title3strong" className={card1StrongStyle}>immersive experiences</strong> that <strong className={card1StrongStyle}>tell stories</strong> and <strong id="card1title3strong" className={card1StrongStyle}>create new avenues</strong>.</h3>
+        <div className={portofolioContainerStyle}>
+
+            <div id='journey' className={journeyContainerStyle}>
+                <h1 id='journeyTitle1' className={journeyTitleStyle}>A non-linear journey</h1>
+                <h2 id='journeyTitle2' className={journeySubtitleStyle}>Many roads that sometimes converge.</h2>
+                <h3 id='journeyTitle3' className={journeyContentStyle}>I aim to create <strong id="journeytitle3strong" className={journeyStrongStyle}>meaningfull web applications</strong> and <strong id="journeytitle3strong" className={journeyStrongStyle}>immersive experiences</strong> that <strong className={journeyStrongStyle}>tell stories</strong> and <strong id="journeytitle3strong" className={journeyStrongStyle}>create new avenues</strong>.</h3>
             </div>
 
-            <div id='technologies' className={cardStyle2}>
-                <h1 id="card2title1" className={card2TitleStyle}>Technologies</h1>
-                <h2 id="card2title2" className={card2SubtitleStyle}>A varity of modern tools</h2>
-                {/* <h3 id='card2title3' className={card2ContentStyle}>I use a variety of <strong className={card2StrongStyle}>modern technologies</strong> and tools and <strong className={card2StrongStyle}>take advantage of AI</strong> to create faster.</h3> */}
+            <div id='technologies' className={technologiesContainerStyle}>
+                <h1 id="technologiesTitle1" className={technologiesTitleStyle}>Technologies</h1>
+                <h2 id="technologiesTitle2" className={technologiesSubtitleStyle}>A varity of modern tools</h2>
                 <TechLogos />
             </div>
 
-            <div id='showcase' className={cardStyle3}>
-                <h1 id="card3title1" className={card3TitleStyle}>Showcase</h1>
-                <h2 id="card3title2" className={card3SubtitleStyle}>Personal projects</h2>
-                {/* <h3 id='card3title3' className={card3ContentStyle}>Here are some of the projects I am currently <strong className={card3StrongStyle}>working on</strong>.</h3> */}
+            <div id='showcase' className={showcaseContainerStyle}>
+                <h1 id="showcaseTitle1" className={showcaseTitleStyle}>Showcase</h1>
+                <h2 id="showcaseTitle2" className={showcaseSubtitleStyle}>Personal projects</h2>
                 <Projects />
             </div>
 
-            <div id='together' className={cardStyle4}>
-                <h1 id='card4title1' className={card4TitleStyle}>Together</h1>
-                <h2 id='card4title2' className={card4SubtitleStyle}>We can do great things</h2>
-                <h3 id='card4title3' className={card4ContentStyle}>I check my mailbox regularly: <strong className={card4StrongStyle}>machin at gmail</strong>.com</h3>
+            <div id='together' className={togetherContainerStyle}>
+                <h1 id='togetherTitle1' className={togetherTitleStyle}>Together</h1>
+                <h2 id='togetherTitle2' className={togetherSubtitleStyle}>We can do great things</h2>
+                <h3 id='togetherTitle3' className={togetherContentStyle}>I check my mailbox regularly: <strong className={togetherStrongStyle}>machin at gmail</strong>.com</h3>
             </div>
 
         </div>

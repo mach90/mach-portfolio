@@ -45,7 +45,7 @@ export default function Portfolio() {
     /* //////////////////////////////////////////////////
     CARD 4 STYLE
     ////////////////////////////////////////////////// */
-    const togetherContainerStyle = "flex flex-col justify-center bg-gradient-to-br from-customColorSection4a to-customColorSection4b h-screen px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6 overflow-hidden";
+    const togetherContainerStyle = "flex flex-col justify-center bg-transparent h-screen px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6 overflow-hidden";
     const togetherTitleStyle = "text-3xl lg:text-4xl font-medium text-customColorSection4Text1";
     const togetherSubtitleStyle = "text-3xl lg:text-5xl font-bold text-customColorSection4Text2";
     const togetherContentStyle = "text-4xl lg:text-7xl font-bold bg-customColorSection4a text-customColorSection4Text3 p-4 border-4 border-customColorSection4Text3 mt-16";

@@ -634,6 +634,10 @@ video {
   margin-top: 10rem;
 }
 
+.mr-40 {
+  margin-right: 10rem;
+}
+
 .block {
   display: block;
 }
@@ -648,6 +652,14 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-96 {
+  height: 24rem;
 }
 
 .h-full {
@@ -767,12 +779,12 @@ video {
   gap: 1rem;
 }
 
-.gap-40 {
-  gap: 10rem;
-}
-
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-96 {
+  gap: 24rem;
 }
 
 .place-self-end {
@@ -814,11 +826,6 @@ video {
   border-color: rgb(254 246 242 / var(--tw-border-opacity));
 }
 
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
 .bg-customColorBackground {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -854,14 +861,8 @@ video {
   background-color: rgb(20 20 20 / var(--tw-bg-opacity));
 }
 
-.bg-green-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-\[url\(\'\/src\/img\/background\/sky\.jpg\'\)\] {
@@ -902,12 +903,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-customColorSection4a {
-  --tw-gradient-from: #141414 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(20 20 20 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .to-customColorSection1b {
   --tw-gradient-to: #ff7a3d var(--tw-gradient-to-position);
 }
@@ -918,10 +913,6 @@ video {
 
 .to-customColorSection3b {
   --tw-gradient-to: #eb3938 var(--tw-gradient-to-position);
-}
-
-.to-customColorSection4b {
-  --tw-gradient-to: #000 var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -976,6 +967,10 @@ video {
 .py-48 {
   padding-top: 12rem;
   padding-bottom: 12rem;
+}
+
+.pr-40 {
+  padding-right: 10rem;
 }
 
 .font-customFont1 {

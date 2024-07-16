@@ -1,7 +1,13 @@
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 IMPORTS
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
+import React, { useRef, useEffect } from 'react';
 import Project from "./Project";
+
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 import TravelFormGeneratorImg1 from "../img/projects/travelformgenerator1a.jpg";
 import TravelFormGeneratorImg2 from "../img/projects/travelformgenerator1b.jpg";
@@ -86,23 +92,51 @@ const projects = [
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 STYLES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-const projectsContainerStyle = "flex flex-row gap-40 bg-green-600 overflow-x-hidden w-max px-8 md:px-12 ml-40 gap-4 mt-40";
+const projectsListContainerStyle = "flex flex-row gap-96 overflow-x-hidden w-max px-8 md:px-12 ml-40 mt-40";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 CAROUSEL COMPONENT
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 export default function Projects() {
-  
-  /* //////////////////////////////////////////////////
-  JSX
-  ////////////////////////////////////////////////// */
+  const projectsListRef = useRef(null);
+
+  function getScrollAmount() {
+    if (projectsListRef.current) {
+      const projectsListWidth = projectsListRef.current.scrollWidth;
+      return -(projectsListWidth - window.innerWidth + 300);
+    }
+    return 0;
+  }
+
+  useGSAP(() => {
+    gsap.to(projectsListRef.current, {
+      x: getScrollAmount,
+      duration: 3,
+      scrollTrigger: {
+        trigger: projectsListRef.current,
+        start: "top 20%",
+        end: () => `+=${getScrollAmount() * -1}`,
+        pin: true,
+        scrub: 1,
+        invalidateOnRefresh: true,
+        markers: true
+      }
+    });
+  }, []);
+
   return (
-      <div id='projectsContainer' className={projectsContainerStyle}>
+    <>
+      <div className="h-40"></div>
+      <div id='projectsContainer'>
+        <div ref={projectsListRef} id="projectsList" className={projectsListContainerStyle}>
           {
-              projects.map((project, index) => {
-                  return <Project key={index} {...project} />
-              })
+            projects.map((project, index) => {
+              return <Project key={index} {...project} />
+            })
           }
+        </div>
       </div>
+      <div className="h-96"></div>
+    </>
   );
 }

@@ -1,12 +1,12 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Cpu, Link, Code } from "lucide-react";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 STYLES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-const projectContainerStyle = "flex flex-col lg:flex-row gap-4 justify-center bg-yellow-400";
+const projectContainerStyle = "flex flex-col lg:flex-row gap-4 justify-center";
 
-const projectInfosStyle = "flex flex-col gap-2 bg-blue-600";
+const projectInfosStyle = "flex flex-col gap-2";
 const projectInfosTitleStyle = "text-3xl font-bold";
 
 const projectInfosProgressContainerStyle = "flex flex-row items-center gap-2 mb-2";
@@ -27,17 +27,18 @@ const projectScreenshotSmallContainerStyle = "object-cover object-top border-4 b
 PROJECT COMPONENT
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 export default function Project({title, description, status, bar, techs, src1, src2, link, github}) {
-    const [isHover, setIsHover] = useState(false);
+    // const [isHover, setIsHover] = useState(false);
 
-    const projectScreenshotImage = `w-full h-full cursor-cursor ${isHover ? "brightness-50" : ""}`;
+    const projectScreenshotImage = "w-full h-full cursor-cursor";
+    // const projectScreenshotImage = `w-full h-full cursor-cursor ${isHover ? "brightness-50" : ""}`;
 
-    function handleMouseEnter(){
-        setIsHover(true);
-    }
+    // function handleMouseEnter(){
+    //     setIsHover(true);
+    // }
 
-    function handleMouseLeave(){
-        setIsHover(false);
-    }
+    // function handleMouseLeave(){
+    //     setIsHover(false);
+    // }
 
     return (
         <div className={projectContainerStyle}>
@@ -63,14 +64,18 @@ export default function Project({title, description, status, bar, techs, src1, s
             </div>
 
             {/* <div className="object-cover object-top"> */}
-            <div className={projectScreenshotBigContainerStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className={projectScreenshotBigContainerStyle}>
+            {/* <div className={projectScreenshotBigContainerStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}> */}
                 {/* <a href={link} target="_blank"><img src={src} alt={title} className="rounded-xl shadow-md cursor-crosshair"/></a> */}
-                <a href={link} target="_blank"><img src={src1} alt={title} className={projectScreenshotImage}/></a>
+                <img src={src1} alt={title} className={projectScreenshotImage}/>
+                {/* <a href={link} target="_blank"><img src={src1} alt={title} className={projectScreenshotImage}/></a> */}
             </div>
 
-            <div className={projectScreenshotSmallContainerStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className={projectScreenshotSmallContainerStyle}>
+            {/* <div className={projectScreenshotSmallContainerStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}> */}
                 {/* <a href={link} target="_blank"><img src={src} alt={title} className="rounded-xl shadow-md cursor-crosshair"/></a> */}
-                <a href={link} target="_blank"><img src={src2} alt={title} className={projectScreenshotImage}/></a>
+                <img src={src2} alt={title} className={projectScreenshotImage}/>
+                {/* <a href={link} target="_blank"><img src={src2} alt={title} className={projectScreenshotImage}/></a> */}
             </div>
 
         </div>

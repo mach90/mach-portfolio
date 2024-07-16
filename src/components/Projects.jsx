@@ -119,7 +119,7 @@ export default function Projects() {
         pin: true,
         scrub: 1,
         invalidateOnRefresh: true,
-        markers: true
+        markers: false,
       }
     });
   }, []);

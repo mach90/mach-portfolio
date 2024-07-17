@@ -4,24 +4,24 @@ import { Cpu, Link, Code } from "lucide-react";
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 STYLES
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-const projectContainerStyle = "flex flex-col lg:flex-row gap-4 justify-center";
+const projectContainerStyle = "flex flex-col lg:flex-row gap-4 justify-center text-customColorSection3Text1";
 
-const projectInfosStyle = "flex flex-col gap-2";
+const projectInfosStyle = "flex flex-col gap-2 w-60";
 const projectInfosTitleStyle = "text-3xl font-bold";
 
 const projectInfosProgressContainerStyle = "flex flex-row items-center gap-2 mb-2";
-const projectInfosProgressStatusStyle = "bg-customColorSection3Text2 text-customColorSection3a py-1 px-2 rounded-lg font-medium";
-const projectInfosProgressPercentageStyle = "font-bold text-customColorSection3Text2";
+const projectInfosProgressStatusStyle = " py-1 px-2 rounded-lg font-medium";
+const projectInfosProgressPercentageStyle = "font-bold";
 
 const projectInfosDescriptionStyle = "text-xl font-semibold mb-6 xl:mb-12";
 
 const projectInfosTechsStyle = "flex flex-row sm:flex-col gap-2 mb-6 md:mb-12";
 const projectInfosTechStyle = "flex flex-row gap-1 font-medium";
 
-const projectInfosLinksStyle = "flex flex-row gap-2 p-2 bg-customColorSection3Text1 text-customColorSection3Text2";
+const projectInfosLinksStyle = "flex flex-row gap-2 p-2";
 
-const projectScreenshotBigContainerStyle = "object-cover object-top border-4 border-customColorSection3Text1";
-const projectScreenshotSmallContainerStyle = "object-cover object-top border-4 border-customColorSection3Text1 hidden lg:block";
+const projectScreenshotBigContainerStyle = "object-cover object-top border-4 border-customColorSection3a";
+const projectScreenshotSmallContainerStyle = "object-cover object-top border-4 border-customColorSection3a hidden lg:block";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 PROJECT COMPONENT

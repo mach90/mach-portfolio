@@ -31,24 +31,24 @@ export default function Portfolio() {
     /* //////////////////////////////////////////////////
     TECHNOLOGIES SECTION
     ////////////////////////////////////////////////// */
-    const technologiesContainerStyle = "flex flex-col bg-gradient-to-tr from-customColorSection2a to-customColorSection2b py-48 md:py-64 lg:py-80 xl:py-96 px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6 overflow-hidden";
+    const technologiesContainerStyle = "flex flex-col bg-gradient-to-bl from-customColorSection2a to-customColorSection2b py-48 md:py-64 lg:py-80 xl:py-96 px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6 overflow-hidden";
     const technologiesTitleStyle = "text-3xl lg:text-4xl font-medium text-customColorSection2Text1";
     const technologiesSubtitleStyle = "text-3xl lg:text-5xl font-bold text-customColorSection2Text2";
 
     /* //////////////////////////////////////////////////
     SHOWCASE SECTION
     ////////////////////////////////////////////////// */
-    const showcaseContainerStyle = "flex flex-col bg-gradient-to-br from-customColorSection3a to-customColorSection3b py-48 md:py-64 lg:py-80 xl:py-96 gap-2 xl:gap-6 overflow-hidden";
+    const showcaseContainerStyle = "flex flex-col bg-gradient-to-br from-customColorSection3a via-customColorSection3b to-customColorSection3b py-48 md:py-64 lg:py-80 xl:py-96 gap-2 xl:gap-6 overflow-hidden";
     const showcaseTitleStyle = "text-3xl lg:text-4xl font-medium text-customColorSection3Text1 px-8 sm:px-[10%] md:px-[20%]";
     const showcaseSubtitleStyle = "text-3xl lg:text-5xl font-bold text-customColorSection3Text2 px-8 sm:px-[10%] md:px-[20%]";
 
     /* //////////////////////////////////////////////////
     CARD 4 STYLE
     ////////////////////////////////////////////////// */
-    const togetherContainerStyle = "flex flex-col justify-center bg-transparent h-screen px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6 overflow-hidden";
+    const togetherContainerStyle = "flex flex-col justify-center bg-gradient-to-br from-customColorSection4a to-customColorSection4b h-screen px-8 sm:px-[10%] md:px-[20%] gap-2 xl:gap-6 overflow-hidden";
     const togetherTitleStyle = "text-3xl lg:text-4xl font-medium text-customColorSection4Text1";
     const togetherSubtitleStyle = "text-3xl lg:text-5xl font-bold text-customColorSection4Text2";
-    const togetherContentStyle = "text-4xl lg:text-7xl font-bold bg-customColorSection4a text-customColorSection4Text3 p-4 border-4 border-customColorSection4Text3 mt-16";
+    const togetherContentStyle = "text-4xl lg:text-7xl font-bold text-customColorSection4Text3 p-4 border-4 border-customColorSection4Text3 mt-16";
     const togetherStrongStyle = "text-4xl lg:text-7xl font-bold text-customColorSection4Text2";
     
     useGSAP(() => {

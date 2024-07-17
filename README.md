@@ -7,16 +7,16 @@ This is an experimental portfolio using Spline.
 - [x] Design
 - [x] Projects cards
 - [x] Animations
-- [ ] Responsive
+- [x] Responsive
 - [ ] Refactoring
 
 ## Features checklist
 - [x] Smooth scrolling with GSAP Lenis
-- [-] Threejs interactive with Spline
+- [x] Threejs interactive with Spline
 - [ ] Mouse cursor
-- [ ] Text reveal animation
+- [x] Text reveal animation
 - [ ] Menu text interaction animation
-- [ ] Horizontal scroll section
+- [x] Horizontal scroll section
 - [ ] Video ? Background or player ?
 
 ## Ideas
@@ -37,5 +37,3 @@ This is an experimental portfolio using Spline.
 - Add a Motto section ? or some "arguments" to better understand my personality and thinking ? I can do this for you etc
 - Then finish by the usual "contact me"
 
-//TODO
-- ecran ne s'ajuste pas correctement sur mobile

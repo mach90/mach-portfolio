@@ -1,16 +1,16 @@
 # Mach Portfolio
 
-## What is it ?
-This is an experimental portfolio using Spline.
+## ABOUT THIS PROJECT
+This is an experimental portfolio using React with Spline, GSAP and Lenis.
 
-## To do
+## //TODO
 - [x] Design
 - [x] Projects cards
 - [x] Animations
-- [x] Responsive
+- [/] Responsive
 - [ ] Refactoring
 
-## Features checklist
+## FEATURES
 - [x] Smooth scrolling with GSAP Lenis
 - [x] Threejs interactive with Spline
 - [ ] Mouse cursor
@@ -19,7 +19,7 @@ This is an experimental portfolio using Spline.
 - [x] Horizontal scroll section
 - [ ] Video ? Background or player ?
 
-## Ideas
+## IDEAS TO ENRICH THE PORTFOLIO
 - The journey before or after About me ?
 - Add a real about me kind of resume... not a fan of this but might be needed ?
 - The tech I use

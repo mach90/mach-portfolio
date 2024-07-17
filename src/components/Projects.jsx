@@ -1,7 +1,7 @@
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
 IMPORTS
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-import React, { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import Project from "./Project";
 
 import { gsap } from "gsap";
@@ -21,14 +21,14 @@ import BlankImg1 from "../img/projects/blank1a.jpg";
 import BlankImg2 from "../img/projects/blank1b.jpg";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
-PROJECTS
+PROJECTS DATA
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 const projects = [
   {
     title: "Travel Form Generator",
     status: "In development",
     bar: 30,
-    description: "This app uses React-PDF to generate a Travel Form.",
+    description: "Create a Travel Form .pdf via a user friendly web form and React PDF.",
     techs: ["React", "Tailwind", "React-pdf"],
     src1: TravelFormGeneratorImg1,
     src2: TravelFormGeneratorImg2,
@@ -39,7 +39,7 @@ const projects = [
     title: "Bento Enviro",
     status: "In development",
     bar: 30,
-    description: "Weather, forecast, and more. Bento UI.",
+    description: "Essential weather info and more about your area in a Bento UI layout.",
     techs: ["React", "Tailwind"],
     src1: BentoEnviroImg1,
     src2: BentoEnviroImg2,
@@ -51,18 +51,18 @@ const projects = [
     title: "Porfolio",
     status: "In development",
     bar: 30,
-    description: "Personal portfolio.",
-    techs: ["React", "Tailwind", "Spline", "GSAP"],
+    description: "This animated and responsive portfolio.",
+    techs: ["React", "Tailwind", "Spline", "GSAP", "Lenis", "Blender"],
     src1: PortfolioImg1,
     src2: PortfolioImg2,
     link: "https://mach-portfolio.netlify.app/",
     github: "https://github.com/mach90/portfolio",
   },
   {
-    title: "JavaScript Algorithms",
+    title: "JavaScript experiments",
     status: "Finished",
     bar: 100,
-    description: "Explore JavaScript programming and algorithms by coding games, converters, and more through Udemy courses and Codewars exercises",
+    description: "Exploring JavaScript programming and algorithms by coding games, converters, and more through Udemy courses and Codewars exercises.",
     techs: ["JavaScript"],
     src1: JsImg1,
     src2: JsImg2,
@@ -72,8 +72,8 @@ const projects = [
   {
     title: "Secret Project",
     status: "Concept",
-    bar: 0,
-    description: "Secret project.",
+    bar: 5,
+    description: "Project I've been wanting to work on for a while.",
     techs: ["React"],
     src1: BlankImg1,
     src2: BlankImg2,
@@ -88,9 +88,12 @@ STYLES
 const projectsListContainerStyle = "flex flex-row gap-96 overflow-x-hidden w-max px-8 md:px-12 ml-40 mt-40";
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////
-CAROUSEL COMPONENT
+PROJECTS COMPONENT
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 export default function Projects() {
+  /* //////////////////////////////////////////////////
+  HORIZONTAL SCROLL
+  ////////////////////////////////////////////////// */
   const projectsListRef = useRef(null);
 
   function getScrollAmount() {
@@ -117,6 +120,9 @@ export default function Projects() {
     });
   }, []);
 
+  /* //////////////////////////////////////////////////
+  JSX
+  ////////////////////////////////////////////////// */
   return (
     <>
       <div className="h-40"></div>
